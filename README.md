@@ -15,6 +15,8 @@ El usuario es `admin` y la contraseña `hola`
 
 
 Para crear y borrar encuestas vamos a `http://127.0.0.1:8000/createpoll/` y `http://127.0.0.1:8000/deletepoll/` respectivamente
+
+
 Para votar encuestas vamos a `http://127.0.0.1:8000` donde nos aparecerán todas las que hayamos creado
 
 ![cuestiones](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/pollaplication/cuestiones_zpsixvqb8yb.png)
