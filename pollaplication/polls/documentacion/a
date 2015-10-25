@@ -1,0 +1,84 @@
+  [..
++---------------------------------------------------------------------
+| In /home/alejandro/Aplicacion-Encuestas/pollaplication/polls/
+| admin.py:
+| Import failed (but source code parsing was successful).
+|     Error: ImproperlyConfigured: Requested setting CACHES, but 
+|            settings are not configured. You must either define the 
+|            environment variable DJANGO_SETTINGS_MODULE or call 
+|            settings.configure() before accessing settings. (line 7)
+|   
+  [....
++---------------------------------------------------------------------
+| In /home/alejandro/Aplicacion-Encuestas/pollaplication/polls/
+| views.py:
+| Import failed (but source code parsing was successful).
+|     Error: IndentationError: expected an indented block (views.py, 
+|            line 106)
+|   
+  [......
++---------------------------------------------------------------------
+| In /home/alejandro/Aplicacion-Encuestas/pollaplication/polls/
+| tests.py:
+| Import failed (but source code parsing was successful).
+|     Error: IndentationError: unindent does not match any outer 
+|            indentation level (models.py, line 17) (line 10)
+|   
+  [.........
++---------------------------------------------------------------------
+| In /home/alejandro/Aplicacion-Encuestas/pollaplication/polls/
+| models.py:
+| No documentation available!
+|     Error: Import failed:
+|            IndentationError: unindent does not match any outer 
+|            indentation level (models.py, line 17)
+|     Error: Source code parsing failed:
+|            Error during parsing: unindent does not match any outer 
+|            indentation level (<tokenize>, line 17) (/home/alejandro/
+|            Aplicacion-Encuestas/pollaplication/polls/models.py)
+|   
+  [...........
++---------------------------------------------------------------------
+| In /home/alejandro/Aplicacion-Encuestas/pollaplication/polls/
+| urls.py:
+| Import failed (but source code parsing was successful).
+|     Error: IndentationError: expected an indented block (views.py, 
+|            line 106) (line 6)
+|   
+  [....................
+Warning: No information available for polls.admin.ChoiceInline's base 
+         django.contrib.admin.TabularInline
+  [....................
+Warning: No information available for polls.admin.QuestionAdmin's base
+         django.contrib.admin.ModelAdmin
+  [....................
+Warning: No information available for 
+         polls.tests.QuestionMethodTests's base django.test.TestCase
+  [....................
+Warning: No information available for polls.views.DetailView's base 
+         django.views.generic.DetailView
+  [....................
+Warning: No information available for polls.views.IndexView's base 
+         django.views.generic.ListView
+  [....................
+Warning: No information available for polls.views.ResultsView's base 
+         django.views.generic.DetailView
+  [................................
+Warning: No information available for polls.admin.ChoiceInline's base 
+         django.contrib.admin.TabularInline
+  [................................
+Warning: No information available for polls.admin.QuestionAdmin's base
+         django.contrib.admin.ModelAdmin
+  [................................
+Warning: No information available for 
+         polls.tests.QuestionMethodTests's base django.test.TestCase
+  [................................
+Warning: No information available for polls.views.DetailView's base 
+         django.views.generic.DetailView
+  [................................
+Warning: No information available for polls.views.IndexView's base 
+         django.views.generic.ListView
+  [................................
+Warning: No information available for polls.views.ResultsView's base 
+         django.views.generic.DetailView
+  [.........................................................................]
