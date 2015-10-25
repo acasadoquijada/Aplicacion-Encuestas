@@ -1,0 +1,4 @@
+
+<p> Poll created </p>
+<a href="{% url 'polls:index' %}">Index</a>
+<a href="{% url 'polls:create_poll' %}">Another poll?</a>

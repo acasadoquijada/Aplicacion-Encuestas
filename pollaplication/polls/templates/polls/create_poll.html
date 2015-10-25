@@ -1,0 +1,28 @@
+<h1>Create poll</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<form action="{% url 'polls:newPoll' %}" method="post">
+{% csrf_token %}
+	<label for="name">Poll name:</label>
+    <input type="text" name="name" id="name" />
+    <br />
+    <label for="option">Option 1:</label>
+    <input type="text" name="option1" id="option1" />
+
+    <label for="option">Votes :</label>
+    <input type="text" name="votes1" id="votes1" />
+    <br />
+    <label for="option">Option 2:</label>
+    <input type="text" name="option2" id="option2" />
+
+    <label for="option">Votes :</label>
+    <input type="text" name="votes2" id="votes2" />
+    <br />
+    <label for="option">Option 3:</label>
+    <input type="text" name="option3" id="option3" />
+
+    <label for="option">Votes :</label>
+    <input type="text" name="votes3" id="votes3" />
+    <br />
+<input type="submit" value="Create" />
+</form>

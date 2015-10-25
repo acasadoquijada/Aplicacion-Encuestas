@@ -1,0 +1,13 @@
+<h1>Remove poll</h1>
+
+<h2> Polls availables </h2>
+
+<form action="{% url 'polls:deleteOnePoll' %}" method="post">
+{% csrf_token %}
+{% for poll in poll_list %}
+ 	<input type="radio" name="poll" id="poll{{ forloop.counter }}" value="{{ poll.id }}" />
+    <label for="poll{{ forloop.counter }}">{{ poll.question_text }}</label><br />
+    <br />
+{% endfor %}
+<input type="submit" value="Delete" />
+</form>
