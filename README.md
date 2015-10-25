@@ -1,7 +1,10 @@
 # Aplicacion Encuestas
+
 Pequeña aplicación web que permite crear y votar encuestas.
 
 La aplicación web ha sido creada usando el tutorial de [Django](https://docs.djangoproject.com/en/1.8/intro/tutorial01/) para la asignatura infraestructura virtual
+
+[![Build Status](https://travis-ci.org/acasadoquijada/Aplicacion-Encuestas.svg?branch=master)](https://travis-ci.org/acasadoquijada/Aplicacion-Encuestas)
 
 ##Uso
 
