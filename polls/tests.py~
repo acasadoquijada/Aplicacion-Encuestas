@@ -8,6 +8,17 @@ from .models import Question, Choice
 
 class QuestionMethodTests(TestCase):
 
+
+	def test_votes(self):
+		q = Question(question_text = "Test question",pub_date=timezone.now())
+
+
+
+		c = Choice(question = q , choice_text = "Choice test 1", votes=2)
+
+		self.assertEqual(c.votes, 2)
+		print"Test: Comprobacion votos"
+
 	def test_create_question(self):
 		q = Question(question_text = "Test question",pub_date=timezone.now())
 
@@ -45,6 +56,9 @@ class QuestionMethodTests(TestCase):
 		self.assertEqual(response.content,'[{"question_text":"Cuestion1","pub_date":"2010-11-11"},{"question_text":"Cuestion2","pub_date":"2010-11-11"}]')
 
 		print"Test: Vista JSON"
+
+
+		
 
 
 
