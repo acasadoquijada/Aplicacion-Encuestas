@@ -8,5 +8,5 @@ setup(name='pollaplication',
 	author_email='acasadoquijada@gmail.com',
 	license='GNU GPL',
 	packages=['pollaplication'],
-	install_requires=['django','wheel'],
+	install_requires=['django','wheel','djangorestframework'],
 	zip_safe=False)
