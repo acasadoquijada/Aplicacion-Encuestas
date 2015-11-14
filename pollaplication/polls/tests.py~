@@ -1,5 +1,4 @@
 import datetime
-
 from django.utils import timezone
 from django.test import TestCase
 
@@ -28,18 +27,24 @@ class QuestionMethodTests(TestCase):
 
 		
 		self.assertEqual(q.question_text, "Test question")
+		print"Test: Creacion y salvado de encuestas con opciones"
 
 	def test_was_published_recently_with_future_question(self):
-        """
-        was_published_recently() should return False for questions whose
-        pub_date is in the future.
-        """
+ 
 		time = timezone.now() + datetime.timedelta(days=30)
 		future_question = Question(pub_date=time)
 		self.assertEqual(future_question.was_published_recently(), False)
+		print"Test: Comprobacion fecha de creacion"
 
+	def test_polls(self):
+		q = Question(question_text = "Cuestion1",pub_date="2010-11-11")
+		q.save()
+		q = Question(question_text = "Cuestion2",pub_date="2010-11-11")
+		q.save()
+		response = self.client.get('/polls/')
+		self.assertEqual(response.content,'[{"question_text":"Cuestion1","pub_date":"2010-11-11"},{"question_text":"Cuestion2","pub_date":"2010-11-11"}]')
 
-
+		print"Test: Vista JSON"
 
 
 
